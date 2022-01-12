@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let pageInputs = document.getElementsByTagName("input");
         chrome.storage.sync.get("fillValue", ({ fillValue }) => {
             Array.from(pageInputs).forEach((input) => {
-                input.value = fillValue;
+                if(input.type == "text" || input.type == "number"){
+                    input.value = fillValue;
+                }
             });
         });
     }
