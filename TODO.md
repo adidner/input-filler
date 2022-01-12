@@ -6,6 +6,11 @@ Dev related
 1. [X] potentially add some extra functionailty after talking to users (saving a default value after an apply or something)
 
 Publishing related
-1. [] Make all my graphical assetts for publishing
-1. [] Publishing process for chrome extensions, however that works
+1. [X] Make all my graphical assetts for publishing
+1. [X] Publishing process for chrome extensions, however that works
+
+
+Reach Goals
+1. [] link chrome extension store listing in README
+1. [] ask friends and family to look at and give feedback and give some nice reviews
 
