@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             target: { tabId: tab.id },
             function: fillInputs,
         });
+        
     }
 
     
@@ -23,5 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("fill-button").addEventListener("click", callInjectFillInputs);
     document.getElementById("fill-input").addEventListener("change", () => {
         chrome.storage.sync.set({ fillValue: document.getElementById("fill-input").value });
-    })
+        chrome.storage.local.set({ fillValue: document.getElementById("fill-input").value });
+    });
+
+
+    chrome.storage.local.get("fillValue", ({ fillValue }) => {
+        
+        document.getElementById("fill-input").value = fillValue ?? "";
+    });
 });
