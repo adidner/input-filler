@@ -5,6 +5,18 @@
     "version": "1.0.0",
     "permissions": ["activeTab", "scripting", "storage"],
     "action": {
-        "default_popup": "popup/popup.html"
+        "default_popup": "popup/popup.html",
+        "default_icons": {
+            "16": "chrome-extension-logos/logo-16x16.png",
+            "32": "chrome-extension-logos/logo-32x32.png",
+            "48": "chrome-extension-logos/logo-48x48.png",
+            "128": "chrome-extension-logos/logo-128x128.png"
+        }
+    },
+    "icons": {
+        "16": "chrome-extension-logos/logo-16x16.png",
+        "32": "chrome-extension-logos/logo-32x32.png",
+        "48": "chrome-extension-logos/logo-48x48.png",
+        "128": "chrome-extension-logos/logo-128x128.png"
     }
 }
