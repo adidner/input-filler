@@ -1,0 +1,14 @@
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin: 160px;
+}
+
+input {
+    margin: 3px 0;
+    height: 60px;
+    font-size: 45px;
+    font-weight: bold;
+    border: black solid 8px;
+}
