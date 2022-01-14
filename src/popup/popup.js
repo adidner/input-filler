@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
         chrome.storage.sync.get("fillValue", ({ fillValue }) => {
             Array.from(pageInputs).forEach((input) => {
                 if(input.type == "text" || input.type == "number"){
-                    input.value = fillValue;
+                    console.log("input.value", input.value)
+                    if(input.value == undefined || input.value == null || input.value == ""){
+                        input.value = fillValue;
+                    }
                 }
             });
         });
