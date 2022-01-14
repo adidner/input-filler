@@ -1,6 +1,8 @@
 # input-filler
 Chrome extension to fill all the inputs on a page with some value
 
+# Live version
+https://chrome.google.com/webstore/detail/input-filler/jenbiknnohffkkbaabolppehhfaemdgn
 
 # Local dev instructions
 
