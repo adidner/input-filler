@@ -11,6 +11,11 @@ Publishing related
 
 
 Reach Goals
-1. [] link chrome extension store listing in README
-1. [] ask friends and family to look at and give feedback and give some nice reviews
+1. [X] link chrome extension store listing in README
+1. [X] ask friends and family to look at and give feedback and give some nice reviews
+1. [] Making a short video to show functionality rather than screen shot
+
+
+Bugs
+1. [X] Input should check that value is empty before fillling (Rachel)
 
