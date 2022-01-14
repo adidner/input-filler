@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
+    function isVisible(elem){
+        const style = getComputedStyle(elem);
+        console.log("style", style)
+        if (style.display === 'none') return false;
+        if (style.visibility !== 'visible') return false;
+        return true;
+    }
 
     function fillInputs(){
         let pageInputs = document.getElementsByTagName("input");
@@ -7,7 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if(input.type == "text" || input.type == "number"){
                     console.log("input.value", input.value)
                     if(input.value == undefined || input.value == null || input.value == ""){
-                        input.value = fillValue;
+                        if(input.offsetParent !== null){ // checking if any parents have display:none on https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent
+                            input.value = fillValue;
+                        }
+
                     }
                 }
             });
@@ -20,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
             target: { tabId: tab.id },
             function: fillInputs,
         });
-        
     }
+
 
     
 
