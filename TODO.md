@@ -14,6 +14,7 @@ Reach Goals
 1. [X] link chrome extension store listing in README
 1. [X] ask friends and family to look at and give feedback and give some nice reviews
 1. [] Making a short video to show functionality rather than screen shot
+1. [] Spend time making a better logo, or hire someone on fiver to do so for me
 
 
 Bugs
